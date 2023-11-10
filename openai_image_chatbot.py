@@ -3,14 +3,14 @@ import base64
 import requests
 
 # OpenAI API Key
-api_key = "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"
+api_key = "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"
 
 # Function to encode the image
 def encode_image(image_file):
     return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Streamlit app
-st.title("Image Describer + Caption Generator for Instagram ✨")
+st.title("Image Describer + Caption Generator for Instagram✨")
 
 # Upload image through Streamlit
 image = st.file_uploader("Choose an image", type=["jpg", "jpeg"])
